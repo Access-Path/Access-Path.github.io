@@ -1,5 +1,5 @@
 * {
-    box-sizing: : border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
@@ -25,7 +25,7 @@
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    paddingL 0 50px;
+    padding: 0 50px;
 }
 
 #navbar_logo{
@@ -92,12 +92,12 @@
 }
 
 .button:hover {
-    background: #4837ff
+    background: #4837ff;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color: #f77062
+    color: #f77062;
     transition: all 0.3 ease;
 }
 
@@ -128,10 +128,10 @@
 
     .navbar__menu.active {
         background: #131313;
-        top: 100%
+        top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index 99;
+        z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
     }
@@ -218,7 +218,7 @@
 
 .main__content h1 {
     font-size: 4rem;
-    background-color: #ff8177
+    background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -229,7 +229,7 @@
 
 .main__content h2 {
     font-size: 4rem;
-    background-color: #ff8177
+    background-color: #ff8177;
     background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -267,8 +267,8 @@
 }
 
 .main__btn:after {
-    position: absolute`
-    content '';
+    position: absolute;
+    content: '';
     top: 0;
     left: 0;
     width: 0;
@@ -356,7 +356,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;;
+    height: 100vh;
 }
 
 .services h1 {

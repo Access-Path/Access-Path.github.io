@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AccessPath Website</title>
+    <title>AccessPath</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" >
@@ -12,7 +12,10 @@
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>  AccessPath</a>
+            <br>
+            <br>
+            <br>
+            <p id="navbar__logo"><img src="images/logo.png" alt="Logo" class="logo" width="30" height="30"></img>AccessPath</p>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -23,49 +26,38 @@
                     <a href="/" class="navbar__links">Home Page</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/report.html" class="navbar__links">Report Accesibility Issue</a>
-                </li>
-                <li class="navbar__item">
                     <a href="/aboutus.html" class="navbar__links">About us</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/signup.html" class="button">Sign up</a>
+                    <a href="/report.html" class="button">Report Accessibility Issue</a>
                 </li>
             </ul>     
         </div>
     </nav>
 
-    <!-- Hero Section -->
+<!-- Hero Section -->
     <div class="main">
-        <div class="main__container">
-            <div class="main__content">
+        <div class="main__container" id="report_page">
+            <div class="main__content" id="report_page">
                 <h1>REPORT ACCESSIBILITY ISSUE</h1>
                 <h2>HELP OUR COMMUNITY</h2>
-                <p>See what makes us different</p>
-                <button class="main_btn"><a href="/">Get Started</a></button>
+                <p>See a problem? Report the problem.</p>
+                <button class="main__btn"><a href="/">Report</a></button>
             </div>
-        </div>
-        <div class="main_img--container">
-            <img src="images/pic2.jpg" alt="Picture" id="main__img">
-        </div>
-        <div class="map_img--container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359537.0372323226!2d-75.8002569!3d45.25015655000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1729269439835!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map_img--container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359537.0372323226!2d-75.8002569!3d45.25015655000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1729269439835!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
 
-    <!-- Services Section -->
+<!-- Services Section -->
 <div class="services">
-    <h1>See what the hype is about</h1>
+    <h1>Reports</h1>
     <div class="services__container">
         <div class="services__card">
-            <h2>Experience Bliss</h2>
-            <p>AI Powered Technology</p>
-            <button>Get Started</button>
-        </div>
-        <div class="services__card">
-            <h2>Are you ready?</h2>
-            <p>Take the leap</p>
-            <button>Get Started</button>
+            <h2 id="Text"></h2>
+            <p  id="Text"></p>
+            <button class="other__buttons"><a href="/"></a></button>
         </div>
     </div>
 </div>
@@ -75,66 +67,36 @@
     <div class="footer__links">
         <div class="footer__link--wrapper">
             <div class="footer__link--items">
-                <h2>About Us</h2>
-                <a href="/">How it works</a>
-                <a href="/">Testimonials</a>
-                <a href="/">Careers</a>
-                <a href="/">Investements</a>
-                <a href="/">Terms of Service</a>
+                <h2 id="Text">About Us</h2>
+                <a href="/contact.html">LinkedIn</a>
+                <a href="/contact.html">GitHub</a>
+                <a href="/contact.html">Email</a>
             </div>
-            <div class="footer__link--items">
-                <h2>Contact Us</h2>
-                <a href="/">Contact</a>
-                <a href="/">Support</a>
-                <a href="/">Destinations</a>
-                <a href="/">Sponsorships</a>
-            </div>
-        </div>
-        <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-                <h2>Videos</h2>
-                <a href="/">Submit Video</a>
-                <a href="/">Ambassadors</a>
-                <a href="/">Agency</a>
-                <a href="/">Influencers</a>
-            </div>
-            <div class="footer__link--items">
-                <h2>Social Media</h2>
-                <a href="/">Instagram</a>
-                <a href="/">Facebook</a>
-                <a href="/">Youtube</a>
-                <a href="/">Twitter</a>
+            <div class="social__icons">
+                </a>
+                <a href="/contact.html" class="social__icons" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="/contact.html" class="social__icons" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="/contact.html" class="social__icons" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
             </div>
         </div>
     </div>
     <div class="social__media">
         <div class="social__media--wrap">
             <div class="footer__logo">
-                <a href="/" id="footer__logo"><i class="fas fa-gem">
-                </i>NEXT</a>
+                <h4 id="footer__logo" style="color:white;"><img src="images/logo.png" alt="Logo" class="logo" width="15" height="15"></img>
+                    AccessPath</h4>
             </div>
-            <p class="website__right">© NEXT 2020. All Rights reserved</p>
-            <div class="social__icons">
-                <a href="/" class="social__icons" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="/" class="social__icons" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="/" class="social__icons" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="/" class="social__icons" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="/" class="social__icons" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </div>
+            <p id = "Text" class="website__right">© AccessPath 2020. All Rights reserved</p>
         </div>
     </div>
- </div>
 
-    <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
+  

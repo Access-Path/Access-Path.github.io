@@ -402,13 +402,6 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.services2 {
-    clear: none;
-    background: #141414;
-    display: flex;
-    height: 100vh;
-}
-
 #contact__page.services__container {
     display: flex;
     justify-content: left;
@@ -417,7 +410,7 @@ a:hover {
 }
 
 .services__card {
-    margin: 1rem;
+    margin: 4rem;
     height: 525px;
     width: 400 px;
     border-radius: 4px;

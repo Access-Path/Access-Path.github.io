@@ -45,7 +45,7 @@
                 <h1>REPORT ACCESSIBILITY ISSUE</h1>
                 <h2>HELP OUR COMMUNITY</h2>
                 <p>See a problem? Report the problem.</p>
-                <button class="main__btn"><a href="/">Report</a></button>
+                <button class="main__btn" id="scroll__button"><a>Report</a></button>
             </div>
             <div class="map_img--container">
                 <br>
@@ -56,19 +56,51 @@
     </div>
 
 <!-- Services Section -->
-<div class="services">
-    <h1>Reports</h1>
-    <div class="services__container">
-        <div class="services__card">
-            <h2 id="Text"></h2>
-            <p  id="Text"></p>
-            <button class="other__buttons"><a href="/"></a></button>
+<div class="services" id="services">
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1>Issue Report Form</h1>
+    <form id="issueForm">
+        <div class="form-group">
+            <label for="street" id="Text">Street Name:</label>
+            <input type="text" class="input" id="street" name="street" required>
         </div>
-    </div>
+        <br>
+        <div class="form-group">
+            <label for="area" id="Text">Area on the Street:</label>
+            <input type="text" class="input" id="area" name="area" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="issue-type" id="Text">Type of Issue:</label>
+            <input type="text" class="input" id="issue-type" name="issue-type" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="description" id="Text">Description:</label>
+            <textarea class="input" id="description" name="description" required></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit" class="submit__btn">Submit</button>
+        </div>
+    </form>
+</div>
+<div class="services" id="Title">    
+    <h1>Reports</h1>
+</div>
+<div class="services" id="services">
+    <input type="text" id="searchBar" placeholder="Search streets..." oninput="filterReports()">
+    <div id="submittedData"></div>
 </div>
 
+
+
 <!-- Footer Section -->
- <div class="footer__container">
+<div class="footer__container">
     <div class="footer__links">
         <div class="footer__link--wrapper">
             <div class="footer__link--items">
@@ -100,7 +132,7 @@
             <p id = "Text" class="website__right">© AccessPath 2020. All Rights reserved</p>
         </div>
     </div>
-
+</div>
 <script src="app.js"></script>
 </body>
 </html>

@@ -105,7 +105,34 @@ a {
     transition: all 0.3s ease;
 }
 
-a:hover {
+#box {
+    display:block;
+
+}
+
+.submit__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 5px;
+    height: 2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
+}
+
+.submit__btn:hover {
+    background: #4837ff;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer
+}
+
+a#link:hover {
     color: #f77062;
     transition: all 0.3 ease;
 }
@@ -396,6 +423,26 @@ a:hover {
     -moz-text-fill-color: transparent;
 }
 
+#Title {
+    height: 10vh;
+}
+
+#issueForm {
+    width: 50%;
+    text-align: center;
+    border: 1px solid white;
+    padding: 50px;
+}
+
+.input {
+    width: 100%
+}
+
+#services {
+    border-color: white;
+    border-width: 5px;
+}
+
 .services__container {
     display: flex;
     justify-content: center;
@@ -415,6 +462,32 @@ a:hover {
     width: 400 px;
     border-radius: 4px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%, url ('/images/pic'))
+}
+
+#submittedData {
+    clear: right;
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 4000px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 600px; /* You can adjust this based on your needs */
+    border: 1px solid white;
+    padding: 50px;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    z-index: 1; /* Ensures it's on top */
+    position: relative; 
 }
 
 button.other__buttons {
@@ -471,4 +544,8 @@ button.other__buttons:hover:after {
 
 .footer__link--wrapper {
     margin-left: 1rem;
+}
+
+.footer__container {
+    max-height: 20vh;
 }

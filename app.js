@@ -41,13 +41,13 @@ function displayReports(filter = '') {
         }
         const reportElement = `
             <div class="report">
-                <h2 id="Text">Submitted Data</h2>
+                <h2 id="Text">Report</h2>
                 <p id="Text"><strong>Street:</strong> ${report.street}</p>
                 <p id="Text"><strong>Area:</strong> ${report.area}</p>
                 <p id="Text"><strong>Issue Type:</strong> ${report.issueType}</p>
                 <p id="Text"><strong>Description:</strong> ${report.description}</p>
-                <button onclick="deleteReport(${index})">Delete</button>
-
+                <button id="delete__btn" onclick="deleteReport(${index})">Delete</button>
+                <br>
             </div>
         `;
         submittedData.innerHTML += reportElement;

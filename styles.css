@@ -46,7 +46,6 @@ a {
     -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
-    cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
 }
@@ -129,7 +128,7 @@ a {
     background: #4837ff;
     color: #fff;
     transition: all 0.3s ease;
-    cursor: pointer
+    cursor: pointer;
 }
 
 a#link:hover {
@@ -233,7 +232,6 @@ a#link:hover {
     }
 }
 
-/* Hero section CSS */
 .main {
     background-color: #141414;
     clear: both;
@@ -414,8 +412,8 @@ a#link:hover {
     #f99185 52%, 
     #cf556c 78%, 
     #b12a5b 100%);
-    background-size: 100%;
-    margin-bottom: 5rem;
+    background-size: 100%;;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -444,7 +442,7 @@ a#link:hover {
 }
 
 .services__container {
-    display: flex;
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -457,9 +455,9 @@ a#link:hover {
 }
 
 .services__card {
-    margin: 4rem;
-    height: 525px;
-    width: 400 px;
+    margin: 3rem;
+    height: 250px;
+    width: 200 px;
     border-radius: 4px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%, url ('/images/pic'))
 }
@@ -501,7 +499,7 @@ button.other__buttons {
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #f03c5d;
     color: #fff;font-size: 1rem;
     cursor: pointer;
     position: relative;

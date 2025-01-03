@@ -56,7 +56,7 @@
         <div class="services__card">
             <div class="services__card" id="about">
                 <h2 id="Text">Rime Nasser Eddine</h2>
-                <p id="Text">Rime Nasser Eddine is a dedicated Software Engineering student at the University of Ottawa with a background in both technical skills and leadership. Fluent in three languages (French, English, and Arabic), Rime combines a passion for real-world problem-solving with hands-on experience, from leading teams as a certified lifeguard to creating environmental impact projects showcased online. Her technical toolkit includes Python, HTML, CSS, JavaScript, and Git. Rime’s innovative spirit shines through in projects like YouTube offline downloaders and website automators, which you can find in her github profile (check the Contact us page), exemplifying a strong drive to build solutions that matter.</p>
+                <p id="Text">Rime Nasser Eddine is a dedicated Software Engineering student at the University of Ottawa with a background in both technical skills and leadership. Fluent in three languages (French, English, and Arabic), Rime combines a passion for real-world problem-solving with hands-on experience, from leading teams as a certified lifeguard to creating environmental impact projects showcased online. Her technical toolkit includes Python, HTML, CSS, JavaScript, SQL and PHP. Rime’s innovative spirit shines through in projects like YouTube offline downloaders and website automators, which you can find in her github profile (check the Contact us page), exemplifying a strong drive to build solutions that matter.</p>
             </div>
             <button class="other__buttons"><a href="contact.php">Contact Information</a></button>
             <br>

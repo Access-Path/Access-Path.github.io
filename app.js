@@ -5,65 +5,30 @@ menu.addEventListener("click", function() {
     menu.classList.toggle("is-active");
 
 })
-
+//Report scroll button
 document.getElementById("scroll__button").addEventListener("click", function() {
     document.getElementById("services").scrollIntoView({ behavior: "smooth" });
 });
 
-const reports = JSON.parse(localStorage.getItem('reports')) || [];
+// Filter reports based on user input
+// Select the search input and report container elements
+const searchInput = document.querySelector('#searchBar'); 
+const reportContainer = document.querySelector('#reportContainer'); 
 
-document.getElementById('issueForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+// Add an event listener to handle input changes
+searchInput.addEventListener('input', (event) => {
+    const searchTerm = event.target.value.toLowerCase(); // Get the search term and convert to lowercase
 
-    const street = document.getElementById('street').value;
-    const area = document.getElementById('area').value;
-    const issueType = document.getElementById('issue-type').value;
-    const description = document.getElementById('description').value;
+    // Get all report elements
+    const reports = reportContainer.querySelectorAll('.report-item');
 
-    const newReport = { street, area, issueType, description };
-
-    reports.push(newReport);
-    localStorage.setItem('reports', JSON.stringify(reports));
-
-    displayReports();
-
-    // Clear the form inputs after submission
-    document.getElementById('issueForm').reset();
-});
-
-function displayReports(filter = '') {
-    const submittedData = document.getElementById('submittedData');
-    submittedData.innerHTML = '';
-
-    reports.forEach((report, index) => {
-        if (filter && !Object.values(report).some(value => value.toLowerCase().includes(filter.toLowerCase()))) {
-            return;
+    // Loop through each report and filter based on the search term
+    reports.forEach((report) => {
+        const reportContent = report.textContent.toLowerCase(); // Get text content of the report
+        if (reportContent.includes(searchTerm)) {
+            report.style.display = 'block'; // Show report if it matches
+        } else {
+            report.style.display = 'none'; // Hide report if it doesn't match
         }
-        const reportElement = `
-            <div class="report">
-                <h2 id="Text">Report</h2>
-                <p id="Text"><strong>Street:</strong> ${report.street}</p>
-                <p id="Text"><strong>Area:</strong> ${report.area}</p>
-                <p id="Text"><strong>Issue Type:</strong> ${report.issueType}</p>
-                <p id="Text"><strong>Description:</strong> ${report.description}</p>
-                <button id="delete__btn" onclick="deleteReport(${index})">Delete</button>
-                <br>
-            </div>
-        `;
-        submittedData.innerHTML += reportElement;
     });
-}
-
-function filterReports() {
-    const filter = document.getElementById('searchBar').value.toLowerCase().trim();
-    displayReports(filter);
-}
-
-function deleteReport(index) {
-    reports.splice(index, 1);
-    localStorage.setItem('reports', JSON.stringify(reports));
-    displayReports();
-}
-
-// Load the reports when the page is loaded
-window.onload = displayReports;
+});

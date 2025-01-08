@@ -135,7 +135,7 @@ $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo "<div class='report-item' id='Text'>";
-                echo "<h3><strong>Report: </strong></h3>";
+                echo "<h3><strong>Report</strong></h3>";
                 echo "<p><strong>Street: </strong>" . htmlspecialchars($row['Streets']) . "</p>";
                 echo "<p><strong>Area: </strong>" .  htmlspecialchars($row['Areas']) . "</p>";
                 echo "<p><strong>Type: </strong>" . htmlspecialchars($row['Types']) . "</p>";

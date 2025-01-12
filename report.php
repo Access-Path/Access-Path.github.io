@@ -117,7 +117,7 @@ $result = $conn->query($sql);
         <br>
         <div class="form-group">
             <label for="description" id="Text">Description:</label>
-            <textarea class="input" id="description" name="description" required></textarea>
+            <textarea class="input" id="description" name="description" required maxlength="250"></textarea>
         </div>
         <br>
         <div>
